@@ -1,0 +1,26 @@
+# geometric distribution
+set.seed(10)
+
+# vectors
+x <- rgeom(1000, 0.2) + 1
+
+# naming the file
+png(file = "rgeom.png")
+
+# plot
+hist(x, col = "green", xlab = "x", main = "Geometric Distributions with p = 0.2")
+
+# mean
+mean_x <- mean(x)
+round(mean_x, 2)
+
+# variance
+var_x <- var(x)
+round(var_x, 2)
+
+# standard deviation
+sd_x <- sd(x)
+round(sd_x, 2)
+
+# saving the file
+dev.off()
